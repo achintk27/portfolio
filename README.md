@@ -1,6 +1,6 @@
 # Achint Kiran — personal portfolio
 
-Private work in progress. Website publishing is disabled until the owner is ready to make it public.
+Private work in progress. 
 
 The website files are at the repository root. Open index.html with a local web server to preview the site. No deployment workflow is included.
 

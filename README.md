@@ -1,35 +1,32 @@
 # Achint Kiran — personal portfolio
 
-A Mario-inspired portfolio with an animated avatar, explorable world, university pennants, and a searchable project collection. Projects remain visible without playing the game.
+A minimal, responsive portfolio for software engineering opportunities, with selected projects, education, engineering and research experience, skills, and contact information.
+
+**Live:** https://achintk27.github.io/portfolio/
+
+## Update the content
+
+- `index.html` contains all portfolio content and project cards.
+- `style.css` controls the layout and typography.
+- `projects.js` adds optional project filtering, search, and Show more. The content works without JavaScript.
+- `Achint-Kiran-Resume.pdf` is the résumé linked from the header and experience section. The current version is the SWE internship résumé supplied on September 29, 2026.
 
 ## Add a project
 
-Edit the `portfolioProjects` array at the top of `projects.js`. Copy an existing entry and supply:
+Duplicate a project `<article>` inside `#project-grid` in `index.html`:
 
-- `id`: a unique URL-friendly name (used for direct project links)
-- `title`, `description`, `category`, `tags`, and `status`
-- `featured`: true to show it before other projects
-- `metric` and `metricLabel`: the result shown on the cover
-- `details`: the engineering challenge and implementation
-- `liveUrl` and `sourceUrl`: optional links; leave empty if unavailable
-- `image` and `imageAlt`: optional screenshot path and description
-- `result`: optional additional outcome
+1. Give it a unique ID such as `project-my-app` and a `data-category` value.
+2. Update the title, description, implementation highlights, technologies, and verified results.
+3. Add a live demo or source link when available; omit unavailable links.
+4. Optionally add a screenshot using `<img class="project-image" src="assets/my-app.webp" alt="Description of the app" loading="lazy" width="800" height="500">`.
+5. Update the technical details. Keep enough information visible to understand the project without expanding them.
 
-Put project screenshots in `assets/`. Categories and counts update automatically. The gallery shows six projects at a time and offers Show more for larger collections. Search checks titles, descriptions, categories, and technologies.
+Category controls appear automatically above three projects. Search and Show more appear above six projects. The first six projects follow the order in the HTML, so place featured work first. Direct project anchors reveal cards even beyond the initial six.
 
-Only add verified projects and results. Do not expose proprietary internship source code.
+## Preview and publish
 
-## Files
+Run a static server from this folder, for example `python3 -m http.server 4173`, then open `http://localhost:4173`.
 
-- `index.html`: biography, education, experience, accessible fallback project cards
-- `projects.js`: project data and searchable gallery
-- `platformer.js`: game, animated avatar, scenery, and world map
-- `style.css`: desktop and mobile styling
-- `assets/`: game artwork and university logos
-- `Achint-Kiran-Resume.pdf`: résumé linked from the header
+GitHub Pages serves the root of the `main` branch. Commit the updated files to publish. There are no package dependencies, external fonts, trackers, or build steps.
 
-Run a local static server from this folder to preview. For example: `python3 -m http.server 4173`.
-
-GitHub Pages can serve these files from the root of the main branch. The repository owner has chosen to make the portfolio public.
-
-Game assets include Kenney Pixel Platformer (CC0); see `assets/kenney-license.txt`.
+The earlier game files and assets are retained for reference but are not loaded by the current website. A local snapshot of the previous design is also preserved in the workspace under `work/before-minimal-2026-09-29/`.

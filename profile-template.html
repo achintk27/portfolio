@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Achint Kiran is a software engineer and NYU Computer Science graduate student building full-stack applications, AI integrations, and data pipelines. Explore projects, experience, and research.">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta property="og:title" content="Achint Kiran — Software Engineer">
+  <meta property="og:description" content="Full-stack applications, AI integrations, and data pipelines. Projects and experience from an NYU Computer Science graduate student.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://achintk27.github.io/portfolio/">
+  <title>Achint Kiran — Software Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23252b28'/%3E%3Ctext x='20' y='27' text-anchor='middle' font-family='Georgia' font-size='25' fill='%23f8f7f4'%3Ea%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=20260929">
+  <script src="projects.js?v=20260929" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="wordmark" href="#home" aria-label="Achint Kiran, home">AK<span>.</span></a>
+  <nav aria-label="Main navigation">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a class="resume-link" href="Achint-Kiran-Resume.pdf?v=20260929" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span><span class="sr-only"> (PDF, opens in a new tab)</span></a>
+  </nav>
+</header>
+<main id="main">
+  <section id="home" class="intro" aria-labelledby="intro-title">
+    <div class="intro-primary">
+      <p class="eyebrow">SOFTWARE ENGINEER · NEW YORK</p>
+      <h1 id="intro-title">Achint Kiran<span>.</span></h1>
+      <p class="intro-subtitle">Full-stack software.<br> AI tools. Data that works.</p>
+      <div class="intro-links"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a href="https://github.com/achintk27" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/achint-kiran" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+    </div>
+    <div class="intro-note">
+      <p>I’m a Computer Science master’s student at <strong>New York University</strong>. I build full-stack applications, connect AI tools, and develop pipelines for complex datasets.</p>
+      <p>My work spans software used by <strong>200+ people</strong>, integrations across <strong>50+ tools</strong>, and machine learning research at IISc.</p>
+      <p class="availability"><span aria-hidden="true"></span>Seeking Summer 2027 SWE internships</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section" aria-labelledby="projects-title">
+    <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="projects-title">Things I’ve built.</h2></div><p>From a real booking problem<br>to reliable data workflows.</p></div>
+    <div id="project-tools" class="project-tools" hidden>
+      <div id="project-filters" aria-label="Filter projects by category"></div>
+      <label id="search-label" hidden><span class="sr-only">Search projects</span><input id="project-search" type="search" placeholder="Search projects or technologies"></label>
+      <p id="project-count" class="result-count" role="status"></p>
+    </div>
+    <div id="project-grid" class="project-grid">
+      <!-- PROJECT TEMPLATE: duplicate an article, give it a unique id and category. -->
+      <article id="project-lab-scheduling" class="project" data-category="Full-stack">
+        <div class="project-meta"><span>FULL-STACK APPLICATION</span><span class="live-badge"><span aria-hidden="true">●</span> Live</span></div>
+        <h3>Lab Equipment<br>Scheduling Platform</h3>
+        <p>A shared place for students and researchers to reserve lab equipment, with safeguards against conflicting bookings.</p>
+        <ul class="project-highlights"><li>OTP authentication and serverless booking APIs.</li><li>Concurrency controls for reliable reservations.</li></ul>
+        <ul class="tags" aria-label="Technologies"><li>React</li><li>Node.js</li><li>Firebase</li><li>Vercel</li><li>Resend</li></ul>
+        <div class="project-impact"><strong>200+</strong><span>users supported</span></div>
+        <div class="project-actions"><a href="https://pes-biotech-web.vercel.app/?demo=true" target="_blank" rel="noopener">Explore the demo <span aria-hidden="true">↗</span></a><details><summary>Technical details</summary><p>Built and deployed a React interface with a Firebase backend and Vercel serverless APIs. OTP authentication controls access; concurrency checks prevent two users from reserving the same equipment and time slot.</p><a class="permalink" href="#project-lab-scheduling">Link to this project</a></details></div>
+      </article>
+      <article id="project-genome-pipeline" class="project" data-category="Data & ML">
+        <div class="project-meta"><span>DATA ENGINEERING & ML</span><span class="project-label">Research project</span></div>
+        <h3>Automated Genome<br>Analysis Pipeline</h3>
+        <p>A Python pipeline that turns raw genomic files into structured features for analysis and machine learning.</p>
+        <ul class="project-highlights"><li>FASTA/VCF parsing and automated variant filtering.</li><li>Input validation and structured logging for failures.</li></ul>
+        <ul class="tags" aria-label="Technologies"><li>Python</li><li>React</li><li>SQL</li><li>GWAS</li><li>Machine learning</li></ul>
+        <div class="project-impact"><strong>50%</strong><span>faster data processing</span><span class="secondary-result">85% SNP classification accuracy</span></div>
+        <div class="project-actions"><details><summary>Technical details</summary><p>Automated feature extraction from FASTA and VCF files, with modular validation and structured logs to identify processing failures across chromosome datasets. Trained models for SNP classification using automated variant filtering.</p><a class="permalink" href="#project-genome-pipeline">Link to this project</a></details></div>
+      </article>
+    </div>
+    <p id="project-empty" class="empty-state" hidden>No projects match that search. Try another term or category.</p>
+    <button id="show-more" class="text-button" type="button" hidden>Show more projects ↓</button>
+    <p class="projects-footnote">More work as I build it. <a href="https://github.com/achintk27" target="_blank" rel="noopener">Follow along on GitHub ↗</a></p>
+  </section>
+
+  <section id="about" class="section about-section" aria-labelledby="about-title">
+    <div><p class="eyebrow">02 / ABOUT</p><h2 id="about-title">A hands-on route<br>into software.</h2></div>
+    <div class="about-copy"><p>I got into computer science by building things: a scheduling platform for my university, internal web applications at EY, and an MCP server connecting analysis tools at Aganitha AI.</p><p>Alongside my undergraduate degree, I completed a Computer Science and Engineering minor. I’m now pursuing an MS in Computer Science at NYU, bringing that practical experience into algorithms, computer vision, and new projects.</p><p>My main focus is software engineering. I’m also interested in research that brings machine learning and reliable data systems together.</p></div>
+  </section>
+
+  <section id="education" class="section" aria-labelledby="education-title">
+    <div class="section-heading"><div><p class="eyebrow">03 / EDUCATION</p><h2 id="education-title">What I’m learning.</h2></div></div>
+    <div class="education-grid">
+      <article class="education-entry"><div class="education-top"><span class="school-mark nyu" aria-hidden="true">NYU</span><span class="date">2026 — 2028</span></div><h3>New York University</h3><p class="degree">MS, Computer Science</p><p class="location">New York, NY</p><p class="coursework"><span>Coursework</span>Algorithms · Computer Vision · Virtual and Augmented Reality</p></article>
+      <article class="education-entry"><div class="education-top"><span class="school-mark pes" aria-hidden="true">PES</span><span class="date">2022 — 2026</span></div><h3>PES University</h3><p class="degree">BTech, Biotechnology</p><p class="degree-minor">Minor: Computer Science and Engineering (CSE)</p><p class="location">Bengaluru, India</p><p class="coursework"><span>Coursework</span>Data Structures · Algorithms · OOP · Operating Systems · Database Management Systems</p></article>
+    </div>
+  </section>
+
+  <section id="experience" class="section" aria-labelledby="experience-title">
+    <div class="section-heading"><div><p class="eyebrow">04 / EXPERIENCE</p><h2 id="experience-title">Work experience.</h2></div><a class="section-link" href="Achint-Kiran-Resume.pdf?v=20260929" target="_blank" rel="noopener">Full résumé ↗</a></div>
+    <div class="experience-list">
+      <article class="experience-entry"><div class="experience-date"><span>JAN — JUN 2026</span><span>Bengaluru, India</span></div><div class="experience-content"><h3>Indian Institute of Science <span class="role-tag">Research</span></h3><p class="role">Machine Learning Research Intern</p><ul><li>Adapted and retrained GNoMIX for South Asian genomic data; achieved <strong>98% accuracy on held-out test data</strong> using probability calibration.</li><li>Built Python and R pipelines for quality control and feature extraction.</li><li>Processed <strong>2 TB of genomic data</strong> on an HPC cluster, orchestrating 170+ CPU-hours with SLURM.</li></ul><p class="stack">Python · R · Machine learning · HPC / SLURM</p></div></article>
+      <article class="experience-entry"><div class="experience-date"><span>JUN — AUG 2025</span><span>Hyderabad, India</span></div><div class="experience-content"><h3>Aganitha AI</h3><p class="role">Software Engineering Intern</p><ul><li>Built an MCP server integrating <strong>50+ analysis tools</strong> across existing services.</li><li>Automated workflows for <strong>1,000+ structural dataset files</strong> using Google ADK, LLM APIs, and Python.</li><li>Designed modular REST interfaces and data-abstraction layers for reliable exchange across services.</li></ul><p class="stack">Python · MCP · Google ADK · LLM APIs · REST APIs</p></div></article>
+      <article class="experience-entry"><div class="experience-date"><span>JUN — AUG 2024</span><span>Bengaluru, India</span></div><div class="experience-content"><h3>Ernst & Young</h3><p class="role">Software Engineering Intern</p><ul><li>Shipped <strong>three internal web applications</strong> with React, Node.js, and REST APIs, including an AI chatbot.</li><li>Reduced model deployment time by <strong>30%</strong> through Azure Function Apps automation.</li><li>Increased user engagement by <strong>25%</strong> with interactive components and real-time data visualizations.</li></ul><p class="stack">React · Node.js · Azure · REST APIs</p></div></article>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+    <div><p class="eyebrow">05 / TOOLKIT</p><h2 id="skills-title">Tools I work with.</h2></div>
+    <dl class="skills-list"><div><dt>Languages</dt><dd>Python, C/C++, JavaScript, SQL, HTML/CSS</dd></div><div><dt>Web & services</dt><dd>React, Node.js, REST APIs, Firebase, Resend</dd></div><div><dt>ML & data</dt><dd>PyTorch, scikit-learn, OpenCV, Streamlit, Google ADK</dd></div><div><dt>Cloud & tooling</dt><dd>Azure, Vercel, Git, SLURM, MCP</dd></div><div><dt>AI development</dt><dd>Codex, Claude Code, Gemini</dd></div></dl>
+  </section>
+
+  <section id="contact" class="section contact-section" aria-labelledby="contact-title"><div><p class="eyebrow">LET’S CONNECT</p><h2 id="contact-title">Have something in mind?</h2><p>I’m looking for Summer 2027 software engineering internships.<br>I’d also be glad to hear about relevant research opportunities.</p></div><a class="contact-email" href="mailto:achintkiran2701@gmail.com">achintkiran2701@gmail.com <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer class="site-footer"><span>© 2026 Achint Kiran</span><div><a href="https://github.com/achintk27" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/achint-kiran" target="_blank" rel="noopener">LinkedIn ↗</a><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "lab-scheduling",
+    "category": "Full-stack",
+    "title": "Lab Equipment Scheduling",
+    "description": "Making shared equipment easier to book. A full-stack platform built for students and researchers.",
+    "tags": [
+      "React",
+      "Node.js",
+      "Firebase",
+      "Vercel"
+    ],
+    "metric": "200+",
+    "unit": "users supported",
+    "cover": "booking",
+    "demo": "https://pes-biotech-web.vercel.app/?demo=true",
+    "challenge": "Shared equipment needs a reliable reservation system. The platform gives students and researchers a single place to book equipment, while preventing conflicting reservations.",
+    "approach": "Built a React interface backed by Firebase and Vercel serverless APIs. OTP authentication controls access, while concurrency checks protect equipment and time slots from conflicting bookings. Resend supports the authentication workflow.",
+    "result": "The platform supports 200+ users. Its focus is a dependable booking flow: authenticated access, clear reservations, and safeguards at the API layer."
+  },
+  {
+    "id": "genome-pipeline",
+    "category": "Data & ML",
+    "title": "Genome Analysis Pipeline",
+    "description": "From raw genomic files to structured features. An automated workflow for analysis and machine learning.",
+    "tags": [
+      "Python",
+      "React",
+      "SQL",
+      "Machine learning"
+    ],
+    "metric": "50%",
+    "unit": "faster processing",
+    "cover": "pipeline",
+    "demo": "",
+    "challenge": "Processing chromosome datasets involves repeated parsing, filtering, and validation. This project automates those steps so raw FASTA and VCF files can become structured features for analysis.",
+    "approach": "Developed modular Python processing steps for feature extraction and variant filtering. Added input validation and structured logging to help identify processing failures, and trained models for SNP classification.",
+    "result": "Automated processing was 50% faster, with 85% SNP classification accuracy. The modular pipeline makes validation and failure diagnosis part of the processing workflow."
+  }
+]

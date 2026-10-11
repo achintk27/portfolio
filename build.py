@@ -17,7 +17,6 @@ hero='''<section id="home" class="intro"><div class="hero-top"><p class="eyebrow
 selected=f'''<section id="projects" class="section"><div class="section-heading"><div><p class="eyebrow">01 / SELECTED PROJECTS</p><h2>Built to be useful<span>.</span></h2></div><a class="section-link" href="projects.html">All projects <span>↗</span></a></div><div class="project-grid">{''.join(card(x,n+1) for n,x in enumerate(projects[:2]))}</div></section>'''
 rest=old[old.index('  <section id="about"'):old.index('</main>')]
 rest=rest.replace('Achint-Kiran-Resume.pdf?v=20260929','Achint-Kiran-Resume.pdf?v=20261011b')
-rest=rest.replace('BTech, Biotechnology','BTech · Major: Biotechnology')
 rest=rest.replace('<span class="school-mark nyu" aria-hidden="true">NYU</span>', '<span class="school-pennant nyu" aria-hidden="true"><img src="assets/nyu-logo.png" alt=""></span>')
 rest=rest.replace('<span class="school-mark pes" aria-hidden="true">PES</span>', '<span class="school-pennant pes" aria-hidden="true"><img src="assets/pes-logo.png" alt=""></span>')
 (p/'index.html').write_text(head+header+'<main id="main">'+hero+selected+rest+'</main>'+footer)

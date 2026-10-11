@@ -2,7 +2,7 @@ from pathlib import Path
 import re,json
 p=Path(__file__).resolve().parent
 old=(p/'profile-template.html').read_text()
-head=old[:old.index('<body>')].replace('style.css?v=20260929','style.css?v=20261011e').replace('projects.js?v=20260929','projects.js?v=20261011e').replace('#f8f7f4','#f5f5f0')
+head=old[:old.index('<body>')].replace('style.css?v=20260929','style.css?v=20261011f').replace('projects.js?v=20260929','projects.js?v=20261011f').replace('#f8f7f4','#f5f5f0')
 header='''<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="wordmark" href="index.html" aria-label="Achint Kiran home">AK<span>®</span></a><nav aria-label="Main navigation"><a href="projects.html">Projects</a><a href="index.html#about">About</a><a href="index.html#experience">Experience</a><a class="resume-link" href="Achint-Kiran-Resume.pdf?v=20261011b" target="_blank" rel="noopener">Résumé ↗</a></nav></header>'''
 footer='''<footer class="site-footer"><span>© 2026 Achint Kiran · Built with intention.</span><div><a href="https://github.com/achintk27">GitHub ↗</a><a href="https://www.linkedin.com/in/achint-kiran">LinkedIn ↗</a><a href="mailto:achintkiran2701@gmail.com">Email ↗</a></div></footer></body></html>'''
 # Monogram is a visual mark, not a registered trademark.
